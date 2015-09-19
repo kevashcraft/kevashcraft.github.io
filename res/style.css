@@ -1,0 +1,19 @@
+body {
+	height: 100%;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+}
+
+section {
+	position: absolute;
+	top: 100%;
+
+	padding: 45px;
+
+	border-radius: 4px;
+	background: #fff;
+
+	display: none;
+}
+
