@@ -1,7 +1,13 @@
 window.addEventListener('DOMContentLoaded', ready);
 window.addEventListener('mousewheel', onWheel);
 window.addEventListener('keydown', onKeyDown);
-window.addEventListener('resize', onWindowResize)
+window.addEventListener('resize', onWindowResize);
+
+window.addEventListener('touchstart', onTouch);
+window.addEventListener('touchmove', onTouch);
+window.addEventListener('touchend', onTouch);
+
+
 
 function ready () {
 

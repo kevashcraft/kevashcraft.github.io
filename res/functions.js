@@ -112,6 +112,16 @@ function onKeyDown (e) {
 	if (e.keyCode == 38) sectionMove(true);
 }
 
+var touchPos = false;
+function onTouch (e) {
+	var e = window.event || e;
+	if(e.type == 'touchstart') touchPos = e.changedTouches[0].clientY;
+	if(event.type == 'touchend') {
+		var back = e.changedTouches[0].clientY > touchPos ? true : false;
+		sectionMove(back);
+	}
+}
+
 function onWindowResize () {
 	sectionPositionReset();
 }
